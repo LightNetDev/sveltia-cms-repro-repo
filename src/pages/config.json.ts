@@ -9,6 +9,9 @@ const config: CmsConfig = {
   },
   media_folder: "src/assets",
   public_folder: "/src/assets",
+  output: {
+    omit_empty_optional_fields: true,
+  },
   collections: [
     {
       name: "entry-collection",
@@ -16,55 +19,27 @@ const config: CmsConfig = {
       folder: "src/content/entry-collection",
       format: "json",
       extension: "json",
-      summary: "{{title}}",
       fields: [
         {
-          name: "title",
-          label: "Title",
-        },
-        {
-          name: "published",
-          label: "Published",
-          widget: "boolean",
-          required: false,
-        },
-        {
-          name: "body",
-          label: "Body",
-          widget: "markdown",
-          required: false,
-        },
-      ],
-    },
-    {
-      name: "todo-file",
-      label: "Todo File",
-      format: "json",
-      files: [
-        {
-          name: "todo-list",
-          label: "Todo List",
-          file: "src/content/file-collection/todo-list.json",
-          fields: [
+          name: "list",
+          widget: "list",
+          label_singular: "list item",
+          types: [
             {
-              name: "title",
-              label: "Title",
-            },
-            {
-              name: "items",
-              label: "Items",
-              widget: "list",
-              summary: "{{fields.text}}",
+              name: "my-type",
               fields: [
+                { name: "title" },
                 {
-                  name: "text",
-                  label: "Text",
-                },
-                {
-                  name: "done",
-                  label: "Done",
-                  widget: "boolean",
+                  name: "optionalObject",
+                  label: "Optional Object",
                   required: false,
+                  widget: "object",
+                  fields: [
+                    {
+                      name: "foo",
+                      widget: "string",
+                    },
+                  ],
                 },
               ],
             },
