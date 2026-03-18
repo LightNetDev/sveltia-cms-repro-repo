@@ -1,4 +1,28 @@
 {
-    "title": "my title",
-    "flag": true
+  "title": "starter entry one",
+  "published": true,
+  "category": "bug",
+  "updatedAt": "2026-03-18T10:30",
+  "summary": "The baseline entry used for simple field, sorting, and JSON output checks.",
+  "priority": 2,
+  "tags": [
+    "starter",
+    "json"
+  ],
+  "owner": {
+    "name": "Maintainer Example",
+    "team": "Core",
+    "contact": "maintainer@example.com"
+  },
+  "checklist": [
+    {
+      "label": "Keep main branch clean",
+      "done": true
+    },
+    {
+      "label": "Create a focused repro branch",
+      "done": true
+    }
+  ],
+  "body": "This sample entry exists so new repro branches start with a non-trivial JSON record."
 }

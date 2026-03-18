@@ -1,0 +1,17 @@
+{
+  "title": "starter todo list",
+  "items": [
+    {
+      "text": "Create a branch from main",
+      "done": true
+    },
+    {
+      "text": "Reduce the repro to the smallest possible change",
+      "done": false
+    },
+    {
+      "text": "Document the issue before sharing the branch",
+      "done": false
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "title": "second starter entry",
+  "published": false,
+  "category": "workflow",
+  "updatedAt": "2026-03-17T09:15",
+  "summary": "A second JSON entry to exercise additional widgets and list rendering.",
+  "priority": 4,
+  "tags": [
+    "workflow",
+    "editor-state"
+  ],
+  "owner": {
+    "name": "QA Example",
+    "team": "Repro Crew",
+    "contact": "qa@example.com"
+  },
+  "checklist": [
+    {
+      "label": "Confirm issue on main",
+      "done": true
+    },
+    {
+      "label": "Capture minimal reproduction branch",
+      "done": false
+    }
+  ],
+  "body": "## Why this entry exists\n\nIt gives the baseline repo a second record with nested objects, list items, and markdown content."
+}
