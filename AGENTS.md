@@ -8,14 +8,6 @@ Keep each branch focused on a single issue.
 Prefer the smallest possible config and content changes that still reproduce the problem.
 Do not rewrite the general starter unless the task is to improve the baseline itself.
 
-When preparing a repro branch:
-
-1. Branch from `main`.
-2. Change only the files needed to trigger the issue.
-3. Record exact steps, expected behavior, and actual behavior in the branch description, PR, commit message, or issue report.
-4. Do not repurpose the sample file collection as issue documentation unless the repro itself is about file collections.
-5. Leave unrelated starter data intact unless removing it is part of the minimal repro.
-
 Project-specific notes:
 
 - The CMS config is served from [`src/pages/config.json.ts`](/src/pages/config.json.ts).
