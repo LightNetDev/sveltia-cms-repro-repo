@@ -13,7 +13,7 @@
     "check": "astro check"
   },
   "dependencies": {
-    "@sveltia/cms": "^0.146.10",
+    "@sveltia/cms": "^0.147.0",
     "astro": "^6.0.5"
   },
   "devDependencies": {
