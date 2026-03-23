@@ -5,7 +5,7 @@ const config: CmsConfig = {
   app_title: "Sveltia CMS Repro Starter",
   backend: {
     name: "github",
-    repo: "https://github.com/LightNetDev/sveltia-cms-repro-repo",
+    repo: "LightNetDev/sveltia-cms-repro-repo",
   },
   media_folder: "src/assets",
   public_folder: "/src/assets",
