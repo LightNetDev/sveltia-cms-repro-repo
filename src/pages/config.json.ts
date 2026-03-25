@@ -23,52 +23,10 @@ const config: CmsConfig = {
           label: "Title",
         },
         {
-          name: "published",
-          label: "Published",
-          widget: "boolean",
-          required: false,
-        },
-        {
           name: "body",
           label: "Body",
           widget: "markdown",
           required: false,
-        },
-      ],
-    },
-    {
-      name: "todo-file",
-      label: "Todo File",
-      format: "json",
-      files: [
-        {
-          name: "todo-list",
-          label: "Todo List",
-          file: "src/content/file-collection/todo-list.json",
-          fields: [
-            {
-              name: "title",
-              label: "Title",
-            },
-            {
-              name: "items",
-              label: "Items",
-              widget: "list",
-              summary: "{{fields.text}}",
-              fields: [
-                {
-                  name: "text",
-                  label: "Text",
-                },
-                {
-                  name: "done",
-                  label: "Done",
-                  widget: "boolean",
-                  required: false,
-                },
-              ],
-            },
-          ],
         },
       ],
     },
