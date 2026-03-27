@@ -22,7 +22,7 @@ const config: CmsConfig = {
           name: "image",
           label: "Image",
           widget: "image",
-          media_folder: "images",
+          media_folder: "./images",
         },
       ],
     },
