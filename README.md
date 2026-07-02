@@ -3,6 +3,7 @@
 This repository is a minimal Astro project meant to stay clean on `main` and act as the starting point for reproducing Sveltia CMS issues.
 
 The baseline includes:
+
 - A small Astro app that mounts Sveltia CMS at `/`
 - A typed JSON config route at `/config.json`
 - A reusable entry collection with a minimal editing surface
@@ -14,6 +15,7 @@ The baseline includes:
 Treat `main` as the stable starter branch.
 
 For each issue reproduction:
+
 1. Create a new branch from `main`.
 2. Make the smallest possible change set that reproduces one issue.
 3. Record the exact steps, expected behavior, and actual behavior in the branch, commit message, PR, or issue report.
@@ -22,12 +24,12 @@ For each issue reproduction:
 ## Local Development
 
 ```sh
-npm install
-npm run dev
+pnpm install
+pnpm dev
 ```
 
 Open `http://localhost:4321/` to load the CMS.
-Run `npm run check` for Astro diagnostics and `npm run build` to confirm the starter still builds.
+Run `pnpm check` for Astro diagnostics and `pnpm build` to confirm the starter still builds.
 
 ## Project Layout
 
@@ -46,6 +48,7 @@ Run `npm run check` for Astro diagnostics and `npm run build` to confirm the sta
 ```
 
 Key files:
+
 - `src/pages/config.json.ts`: the Sveltia CMS config served to the app
 - `src/content/entry-collection/*.json`: starter entry data for entry-collection issues
 - `src/content/file-collection/todo-list.json`: starter file-collection data for a simple list-based example

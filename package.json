@@ -12,12 +12,13 @@
     "astro": "astro",
     "check": "astro check"
   },
+  "packageManager": "pnpm@11.9.0",
   "dependencies": {
-    "@sveltia/cms": "^0.151.0",
-    "astro": "^6.0.5"
+    "@sveltia/cms": "^0.169.1",
+    "astro": "^6.4.8"
   },
   "devDependencies": {
-    "@astrojs/check": "^0.9.8",
-    "typescript": "^5.9.3"
+    "@astrojs/check": "^0.9.9",
+    "typescript": "^6.0.3"
   }
 }
